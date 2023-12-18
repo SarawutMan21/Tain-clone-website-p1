@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*font all*/
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif; */
+
+.navmenu {
+    display: flex;
+    background-color: #fff;
+    font-family: 'Inter';
+    height: 80px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 12px;
+    z-index: 997;
+
+}
+
+.navmenu a {
+    color: #000;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li{
+    margin: 0 1rem;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+}
+
+.register a {
+    text-decoration: none;
+}
+
+.register li {
+    margin: 0 1rem;
+    list-style-type: none;
+}
+
+.register .create-store  {
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    padding: 9px 10px;
+    border-radius: 76px;
+}
+
+
+  
+  .hero img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transform: rotate(0.092deg);
+    z-index: 1;
+  }
+
+  .hero:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .hero .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+    z-index: 3;
+    
+  }
+
+  .hero h2 {
+    color: #000;
+    margin: 0;
+    font-family: 'DM Sans';
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .hero p {
+    color: #000;
+    font-family: 'Inter';
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero .sign-up-form {
+    border-radius: 7px;
+    text-align: center;
+  }
+
+  
+
+
+  .hero .sign-up-form input[type=submit] {
+    background-color: #EC6F67;
+    border-color: #EC6F67;
+    padding:  10px 20px;
+    border-radius: 56px;
+    color: #000000;
+    font-weight: bold;
+    border: 0px;
+  }
+  
+  .hero .sign-up-form input[type=submit]:hover {
+    background-color: #E84545;
+  }
+
+  .hero .sign-up-form input[type=text] {
+    background-color: #ffffff;
+    padding: 10px 40px 10px 38px;
+    border-radius: 56px;
+    border: 0px;
+  }
+
+
+
+
+  .footer {
+    --background-color: #f4f4f4;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    padding-bottom: 50px;
+    position: absolute;
+    z-index: 4;
+  }
+  
+  .footer .footer-top {
+    padding-top: 50px;
+  }
+  
+  .footer .footer-about .logo {
+    line-height: 0;
+    margin-bottom: 25px;
+  }
+  
+  .footer .footer-about .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+  }
+  
+  .footer .footer-about .logo span {
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--heading-font);
+  }
+  
+  .footer .footer-about p {
+    font-size: 14px;
+    font-family: var(--heading-font);
+  }
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(var(--default-color-rgb), 0.5);
+    font-size: 16px;
+    color: rgba(var(--default-color-rgb), 0.5);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .footer h4 {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-links ul i {
+    padding-right: 2px;
+    font-size: 12px;
+    line-height: 0;
+  }
+  
+  .footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer-links ul a {
+    color: rgba(var(--default-color-rgb), 0.8);
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer-links ul a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer .footer-contact p {
+    margin-bottom: 5px;
+  }
+  
+  .footer .copyright {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgba(var(--default-color-rgb), 0.05);
+  }
+  
+  .footer .copyright p {
+    margin-bottom: 0;
+  }
+  
+  .footer .credits {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+
+  /*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .scroll-top i {
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 0;
+  }
+  
+  .scroll-top:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.8);
+    color: #ffffff;
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
